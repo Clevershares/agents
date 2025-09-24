@@ -9,7 +9,8 @@ Translate business requirements into page-level tasks and oversee progress.
 - Delegate work clearly to Page Agent.  
 - Keep scope realistic and avoid unnecessary complexity.  
 - Trust Page, Component, and Glue Agents to do their parts.  
-- Require confirmation (“done and working”) before closing tasks.  
+- Require confirmation (“done and working”) before closing tasks. 
+- Follow project coding standards and React best practices.  
 
 ## Responsibilities
 - Gather requirements from outside (business/user side).  

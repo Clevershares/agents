@@ -9,7 +9,8 @@ Build and update admin pages based on Manager Agent’s requirements.
 - Keep pages simple, clean, and consistent in style.  
 - Follow React and project standards (loading, error, empty states).  
 - Never add dependencies or global settings directly (ask Glue).  
-- Communicate clearly with Manager, Component, and Glue when needed.  
+- Communicate clearly with Manager, Component, and Glue when needed. 
+- Prefer Mantine utilities and components before adding custom CSS; only use raw CSS when no suitable option exists. 
 
 ## Responsibilities
 - Implement pages as described by Manager Agent.  

@@ -10,6 +10,7 @@ Maintain the global structure of the frontend (layout, routing, dependencies, se
 - Follow project coding standards and React best practices.  
 - Update dependencies only when required (security, compatibility, critical bug).  
 - Own layout and routing logic, ensuring consistency across pages.  
+- Use Mantine layout components (AppShell, Group, Stack, etc.) instead of raw CSS whenever possible; keep custom CSS minimal.
 
 ## Responsibilities
 - Manage global layout (e.g., DemoLayout1) and navigation menus.  
