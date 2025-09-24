@@ -7,11 +7,13 @@ type Edit =
   | { kind: "replace"; path: string; search: string; replace: string }
   | { kind: "insertAfter"; path: string; anchor: string; content: string };
 
-const ROOT = path.resolve(process.cwd()); // keep it local to this project for now
+const ROOT = process.env.WORKSPACE_ROOT
+  ? path.resolve(process.env.WORKSPACE_ROOT)
+  : path.resolve(process.cwd()); // fallback
 
 function safeJoin(p: string) {
   const abs = path.resolve(ROOT, p);
-  if (!abs.startsWith(ROOT)) throw new Error("Path escapes repo root");
+  if (!abs.startsWith(ROOT)) throw new Error("Path escapes WORKSPACE_ROOT");
   return abs;
 }
 

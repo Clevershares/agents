@@ -1,26 +1,26 @@
-[2025-09-24T13:01:26.033Z] Page → Component :: BuildComponent {"name":"Card","fail":true}
-[2025-09-24T13:01:26.033Z] Manager → Manager :: Kickoff {"goal":"scaffold home page"}
-[2025-09-24T13:01:26.034Z] Manager → Manager :: Kickoff
-[2025-09-24T13:01:26.034Z] Component → Page :: ComponentFailed {"name":"Card"}
-[2025-09-24T13:01:26.034Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
-[2025-09-24T13:01:26.035Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
-[2025-09-24T13:01:26.035Z] Page → Component :: BuildComponent {"name":"Hero"}
-[2025-09-24T13:01:26.035Z] Page → Component :: BuildComponent {"name":"Card"}
-[2025-09-24T13:01:26.035Z] Page → Component :: BuildComponent {"name":"Hero"}
-[2025-09-24T13:01:26.035Z] Page → Component :: BuildComponent {"name":"CTA"}
-[2025-09-24T13:01:26.035Z] Component → Page :: ComponentDone {"name":"Card"}
-[2025-09-24T13:01:26.035Z] Page → Component :: BuildComponent {"name":"CTA"}
-[2025-09-24T13:01:26.035Z] Page → Glue :: NeedRouting {"route":"/"}
-[2025-09-24T13:01:26.036Z] Page → Manager :: ComponentRecovered {"name":"Card"}
-[2025-09-24T13:01:26.035Z] Page → Glue :: NeedRouting {"route":"/"}
-[2025-09-24T13:01:26.035Z] Page → Manager :: PageReady {"page":"Home"}
-[2025-09-24T13:01:26.036Z] Page → Glue :: NeedRouting {"route":"home"}
-[2025-09-24T13:01:26.035Z] Page → Manager :: PageReady {"page":"Home"}
-[2025-09-24T13:01:26.035Z] Component → Page :: ComponentDone {"name":"Hero"}
-[2025-09-24T13:01:26.036Z] Component → Page :: ComponentDone {"name":"Hero"}
-[2025-09-24T13:01:26.036Z] Component → Page :: ComponentDone {"name":"CTA"}
-[2025-09-24T13:01:26.037Z] Glue → Page :: RoutingDenied {"route":"home","reason":"must-start-with-slash"}
-[2025-09-24T13:01:26.036Z] Component → Page :: ComponentDone {"name":"CTA"}
-[2025-09-24T13:01:26.036Z] Glue → Page :: RoutingDone {"route":"/"}
-[2025-09-24T13:01:26.036Z] Glue → Page :: RoutingDone {"route":"/"}
-[2025-09-24T13:01:26.037Z] Page → Manager :: PageFailed {"reason":"routing-denied","route":"home"}
+[2025-09-24T13:44:51.276Z] Page → Glue :: NeedRouting {"route":"home"}
+[2025-09-24T13:44:51.277Z] Glue → Page :: RoutingDenied {"route":"home","reason":"must-start-with-slash"}
+[2025-09-24T13:44:51.277Z] Manager → Manager :: Kickoff
+[2025-09-24T13:44:51.276Z] Manager → Manager :: Kickoff {"goal":"scaffold home page"}
+[2025-09-24T13:44:51.277Z] Page → Component :: BuildComponent {"name":"Card","fail":true}
+[2025-09-24T13:44:51.278Z] Page → Manager :: PageFailed {"reason":"routing-denied","route":"home"}
+[2025-09-24T13:44:51.278Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
+[2025-09-24T13:44:51.278Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
+[2025-09-24T13:44:51.278Z] Component → Page :: ComponentFailed {"name":"Card"}
+[2025-09-24T13:44:51.279Z] Page → Component :: BuildComponent {"name":"Hero"}
+[2025-09-24T13:44:51.279Z] Page → Component :: BuildComponent {"name":"CTA"}
+[2025-09-24T13:44:51.279Z] Page → Component :: BuildComponent {"name":"Card"}
+[2025-09-24T13:44:51.279Z] Page → Glue :: NeedRouting {"route":"/"}
+[2025-09-24T13:44:51.278Z] Page → Component :: BuildComponent {"name":"Hero"}
+[2025-09-24T13:44:51.279Z] Component → Page :: ComponentDone {"name":"Card"}
+[2025-09-24T13:44:51.279Z] Page → Manager :: PageReady {"page":"Home"}
+[2025-09-24T13:44:51.278Z] Page → Component :: BuildComponent {"name":"CTA"}
+[2025-09-24T13:44:51.280Z] Page → Manager :: ComponentRecovered {"name":"Card"}
+[2025-09-24T13:44:51.279Z] Component → Page :: ComponentDone {"name":"Hero"}
+[2025-09-24T13:44:51.279Z] Component → Page :: ComponentDone {"name":"CTA"}
+[2025-09-24T13:44:51.278Z] Page → Glue :: NeedRouting {"route":"/"}
+[2025-09-24T13:44:51.280Z] Glue → Page :: RoutingDone {"route":"/"}
+[2025-09-24T13:44:51.278Z] Page → Manager :: PageReady {"page":"Home"}
+[2025-09-24T13:44:51.279Z] Component → Page :: ComponentDone {"name":"Hero"}
+[2025-09-24T13:44:51.280Z] Component → Page :: ComponentDone {"name":"CTA"}
+[2025-09-24T13:44:51.280Z] Glue → Page :: RoutingDone {"route":"/"}
