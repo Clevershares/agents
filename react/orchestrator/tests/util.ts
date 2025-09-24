@@ -3,18 +3,10 @@ import { ComponentAgent, GlueAgent, ManagerAgent, PageAgent } from "../agents";
 import { tracePretty } from "../tracepretty"; // pretty log you already added
 import fs from "fs";
 import path from "path";
-import { FileAgent } from "../agents/fileagent";
+import { registry } from "../registry";
 
 const pretty = path.join(__dirname, "..", "trace.pretty.log");
 try { fs.writeFileSync(pretty, ""); } catch {}
-
-export const registry: Record<AgentName, Agent> = {
-  Manager: new ManagerAgent(),
-  Page: new PageAgent(),
-  Component: new ComponentAgent(),
-  Glue: new GlueAgent(),
-  File: new FileAgent(),
-};
 
 export async function run(seed: Message): Promise<Message[]> {
   const q: Message[] = [seed];
