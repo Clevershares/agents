@@ -1,12 +1,14 @@
 import { describe, it, expect } from "vitest";
 import { Agent, AgentName, Message } from "../../shared/schema";
 import { ComponentAgent, GlueAgent, ManagerAgent, PageAgent } from "./agents";
+import { FileAgent } from "./agents/fileagent";
 
 const registry: Record<AgentName, Agent> = {
   Manager: new ManagerAgent(),
   Page: new PageAgent(),
   Component: new ComponentAgent(),
   Glue: new GlueAgent(),
+  File: new FileAgent(),
 };
 
 async function run(seed: Message): Promise<Message[]> {

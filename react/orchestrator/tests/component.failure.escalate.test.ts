@@ -1,12 +1,14 @@
 import { describe, it, expect } from "vitest";
 import { Agent, AgentName, Message } from "../schema";
 import { ComponentAgent, GlueAgent, ManagerAgent, PageAgent } from "../agents";
+import { FileAgent } from "../agents/fileagent";
 
 const registry: Record<AgentName, Agent> = {
   Manager: new ManagerAgent(),
   Page: new PageAgent(),
   Component: new ComponentAgent(),
   Glue: new GlueAgent(),
+  File: new FileAgent(),
 };
 
 // Custom runner that *injects* a second failure after the Page retries

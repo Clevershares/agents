@@ -1,28 +1,8 @@
 // react/orchestrator/tests/component.failure.retry.test.ts
 import { describe, it, expect } from "vitest";
-import { Agent, AgentName, Message } from "../schema";
-import { ComponentAgent, GlueAgent, ManagerAgent, PageAgent } from "../agents";
+import { Message } from "../schema";
+import { run } from "./util";
 
-const registry: Record<AgentName, Agent> = {
-  Manager: new ManagerAgent(),
-  Page: new PageAgent(),
-  Component: new ComponentAgent(),
-  Glue: new GlueAgent(),
-};
-
-async function run(seed: Message) {
-  const q: Message[] = [seed];
-  const seen: Message[] = [];
-  while (q.length) {
-    const m = q.shift()!;
-    seen.push(m);
-    const a = registry[m.to];
-    if (!a) continue;
-    const out = await a.handle(m);
-    q.push(...out.map(x => ({ ...x, meta: { ts: Date.now(), ...(x.meta ?? {}) } })));
-  }
-  return seen;
-}
 
 describe("Component failure -> retry -> recovery", () => {
   it("retries once and emits ComponentRecovered", async () => {

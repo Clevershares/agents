@@ -1,12 +1,26 @@
-[2025-09-24T10:38:17.398Z] Manager → Manager :: Kickoff
-[2025-09-24T10:38:17.399Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
-[2025-09-24T10:38:17.400Z] Page → Component :: BuildComponent {"name":"Hero"}
-[2025-09-24T10:38:17.400Z] Page → Component :: BuildComponent {"name":"CTA"}
-[2025-09-24T10:38:17.400Z] Page → Glue :: NeedRouting {"route":"/"}
-[2025-09-24T10:38:17.400Z] Page → Glue :: NeedRouting {"route":"home"}
-[2025-09-24T10:38:17.400Z] Page → Manager :: PageReady {"page":"Home"}
-[2025-09-24T10:38:17.401Z] Glue → Page :: RoutingDenied {"route":"home","reason":"must-start-with-slash"}
-[2025-09-24T10:38:17.400Z] Component → Page :: ComponentDone {"name":"Hero"}
-[2025-09-24T10:38:17.401Z] Page → Manager :: PageFailed {"reason":"routing-denied","route":"home"}
-[2025-09-24T10:38:17.400Z] Component → Page :: ComponentDone {"name":"CTA"}
-[2025-09-24T10:38:17.401Z] Glue → Page :: RoutingDone {"route":"/"}
+[2025-09-24T11:49:26.878Z] Page → Glue :: NeedRouting {"route":"home"}
+[2025-09-24T11:49:26.879Z] Glue → Page :: RoutingDenied {"route":"home","reason":"must-start-with-slash"}
+[2025-09-24T11:49:26.878Z] Manager → Manager :: Kickoff {"goal":"scaffold home page"}
+[2025-09-24T11:49:26.879Z] Page → Manager :: PageFailed {"reason":"routing-denied","route":"home"}
+[2025-09-24T11:49:26.878Z] Manager → Manager :: Kickoff
+[2025-09-24T11:49:26.879Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
+[2025-09-24T11:49:26.879Z] Manager → Page :: BuildPage {"title":"Home","components":["Hero","CTA"]}
+[2025-09-24T11:49:26.880Z] Page → Component :: BuildComponent {"name":"Hero"}
+[2025-09-24T11:49:26.879Z] Page → Component :: BuildComponent {"name":"Card","fail":true}
+[2025-09-24T11:49:26.880Z] Page → Component :: BuildComponent {"name":"CTA"}
+[2025-09-24T11:49:26.880Z] Page → Component :: BuildComponent {"name":"Hero"}
+[2025-09-24T11:49:26.880Z] Component → Page :: ComponentFailed {"name":"Card"}
+[2025-09-24T11:49:26.880Z] Page → Glue :: NeedRouting {"route":"/"}
+[2025-09-24T11:49:26.880Z] Page → Component :: BuildComponent {"name":"CTA"}
+[2025-09-24T11:49:26.881Z] Page → Component :: BuildComponent {"name":"Card"}
+[2025-09-24T11:49:26.880Z] Page → Manager :: PageReady {"page":"Home"}
+[2025-09-24T11:49:26.880Z] Page → Glue :: NeedRouting {"route":"/"}
+[2025-09-24T11:49:26.881Z] Component → Page :: ComponentDone {"name":"Card"}
+[2025-09-24T11:49:26.880Z] Component → Page :: ComponentDone {"name":"Hero"}
+[2025-09-24T11:49:26.880Z] Page → Manager :: PageReady {"page":"Home"}
+[2025-09-24T11:49:26.880Z] Component → Page :: ComponentDone {"name":"CTA"}
+[2025-09-24T11:49:26.882Z] Page → Manager :: ComponentRecovered {"name":"Card"}
+[2025-09-24T11:49:26.881Z] Component → Page :: ComponentDone {"name":"Hero"}
+[2025-09-24T11:49:26.881Z] Glue → Page :: RoutingDone {"route":"/"}
+[2025-09-24T11:49:26.881Z] Component → Page :: ComponentDone {"name":"CTA"}
+[2025-09-24T11:49:26.882Z] Glue → Page :: RoutingDone {"route":"/"}
