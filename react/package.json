@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "cli:kick": "tsx cli.ts kick",
+    "cli:component": "tsx cli.ts component Card"
   },
   "keywords": [],
   "author": "",
@@ -12,10 +14,12 @@
   "devDependencies": {
     "@types/node": "^24.5.2",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.63.1"
+    "@anthropic-ai/sdk": "^0.63.1",
+    "dotenv": "^17.2.2"
   }
 }

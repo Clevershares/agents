@@ -1,6 +1,6 @@
 import "dotenv/config";
-import { registry } from "./orchestrator/registry";
-import { Message } from "./orchestrator/schema";
+import { registry } from "./registry";
+import { Message } from "./schema";
 
 async function run(seed: Message) {
   const q: Message[] = [seed];
